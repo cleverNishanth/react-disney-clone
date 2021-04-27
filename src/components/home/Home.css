@@ -1,0 +1,135 @@
+.home {
+  background: url(../../images/home-background.png);
+  overflow: hidden;
+}
+
+.top__sliding__content {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+/* .top__sliding__content:hover{
+    border: 4px solid rgba(249, 249, 249, 0.8);
+} */
+
+.top__sliding__content button {
+  opacity: 0;
+}
+
+.top__sliding__content ul li button::before {
+  font-size: 10px;
+  color: rgb(150, 158, 171);
+}
+.top__sliding__content ul li.slick-active button::before {
+  color: rgb(255, 255, 255);
+}
+
+.top__sliding__content .slick-list {
+  overflow: initial;
+}
+
+.slider__img {
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider__img a {
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  padding: 4px;
+}
+
+.slider__img a img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.slider__img a img:hover {
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 1);
+  transition-duration: 300ms;
+}
+
+.container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* .channel__img {
+  height: 200px;
+  width: 300px;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  align-items: center;
+  margin: 2rem;
+  transition: all 0.3s linear;
+}
+
+.channel__img:hover {
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 1);
+  transition-duration: 300ms;
+  transform: scale(1.05);
+}
+.channels img{
+  height: 200px;
+  width: 300px;
+} */
+
+.wrap {
+  height: 170px;
+  width: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s linear;
+  border-radius: 10px;
+  /* padding: 2rem; */
+  margin: 1rem;
+  position: relative;
+  box-shadow: 7px 17px 15px -4px rgba(11, 9, 9, 0.77);
+  -webkit-box-shadow: 7px 17px 15px -4px rgba(11, 9, 9, 0.77);
+  -moz-box-shadow: 7px 17px 15px -4px rgba(11, 9, 9, 0.77);
+}
+
+.wrap:hover {
+  border: 3px solid rgba(255, 255, 255, 1);
+  transform: scale(1.08);
+}
+
+.wrap img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wrap video {
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.wrap video:hover {
+  opacity: 1;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin: 2rem;
+  box-shadow: 10px 10px 12px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 12px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 12px 3px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,75 @@
+.login {
+  background: url(../../images/login-background.jpg) !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__content {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.logo {
+  width: 40vh;
+  margin: 2rem;
+}
+
+.login_btn {
+  padding: 0.5rem;
+  background: blue;
+  color: #f9f9f9;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: cursive, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.login_btn:hover{
+    color: blue;
+    background: #f9f9f9;
+}
+
+.cta_logo_1 {
+  width: 50vh;
+}
+
+.login__para {
+  color: #ffffff;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 30vh;
+    margin: 2rem;
+  }
+  .login__content{
+      max-width: 31vh;
+  }
+
+  .login_btn{
+      padding: .2rem;
+  }
+
+  .login__para{
+      font-size: .5rem;
+      letter-spacing: 2px;
+  }
+}
